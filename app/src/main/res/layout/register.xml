@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    >
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Create new Account"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
+        android:textSize="30sp"
+         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:id="@+id/passlayout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black"
+
+        android:layout_below="@id/emaillayout"
+        android:layout_height="wrap_content">
+
+            <EditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_lock"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="  Enter your password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="100sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:id="@+id/namelayout"
+android:layout_below="@id/tv"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppinsmedium"
+            android:drawableLeft="@drawable/ic_name"
+            android:layout_height="wrap_content"
+            android:id="@+id/etname"
+            android:hint=" Enter your full name"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernamelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namelayout"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp">
+
+        <EditText
+            android:id="@+id/etusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_name"
+
+            android:fontFamily="@font/poppinsmedium"
+            android:hint=" Enter your username"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_gravity="center"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_below="@+id/usernamelayout"
+        android:id="@+id/emaillayout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+
+            android:id="@+id/etemail"
+            android:fontFamily="@font/poppinsmedium"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="Enter your email"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnregister"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:layout_width="110sp"
+        android:layout_height="65sp"
+        android:layout_below="@id/passlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:background="#3BB5EC"
+        android:fontFamily="@font/poppinsmedium"
+        android:text=" Create Account" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateTint="@color/pink"
+            android:layout_below="@id/namelayout"
+        />
+    <!--    <EditText-->
+    <!--        android:id="@+id/r_username"-->
+    <!--        android:layout_width="300sp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="50sp"-->
+    <!--        android:fontFamily=""-->
+    <!--        android:hint="Enter user name"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:padding="20sp"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="normal" />-->
+
+
+    <!--    <EditText-->
+    <!--        android:inputType="textEmailAddress"-->
+
+    <!--        android:layout_width="300sp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/r_email"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:textStyle="normal"-->
+    <!--        android:hint="Enter EmailAddress"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:padding="20sp"-->
+    <!--        />-->
+
+    <!--    <EditText-->
+    <!--        android:inputType="text"-->
+
+    <!--        android:layout_width="300sp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/r_password"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:textStyle="normal"-->
+    <!--        android:hint="Enter password"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:padding="20sp"-->
+    <!--        />-->
+    <!--    <Button-->
+    <!--        android:id="@+id/r_btn"-->
+    <!--        android:layout_width="120sp"-->
+    <!--        android:layout_height="50sp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:text="register"-->
+    <!--        android:layout_marginTop="20sp"-->
+    <!--        android:background="@android:color/holo_red_light"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textStyle="bold"-->
+    <!--        />-->
+
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnregister"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Already have an account sign in"
+        android:textSize="20sp"
+
+        />
+</RelativeLayout>

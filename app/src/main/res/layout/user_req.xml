@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Homepage">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ></ScrollView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="380sp"
+
+        android:layout_gravity="center"
+        android:layout_margin="16sp"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="2sp"
+        android:layout_height="match_parent">
+        <include layout="@layout/card1" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="380sp"
+        android:layout_gravity="left"
+        android:layout_margin="16sp"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="2sp"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/card2" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="16sp"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="2sp"
+        android:layout_height="match_parent">
+        <include layout="@layout/card3" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/b_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu" />
+</LinearLayout>

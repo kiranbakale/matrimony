@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+
+        <item
+            android:fontFamily="@font/poppinsbold"
+
+
+            android:id="@+id/homepage"
+
+            android:title="Feed"
+            android:icon="@drawable/ic_baseline_dashboard_24"/>
+        <item
+            android:fontFamily="@font/poppinsbold"
+
+
+            android:id="@+id/user"
+            android:title="Suggested users"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"/>
+        <item
+             android:id="@+id/profile"
+            android:fontFamily="@font/poppinsbold"
+
+
+             android:title="Profile"
+             android:icon="@drawable/ic_baseline_account_circle_24"/>
+</menu>
+
+
+<!--            android:id="@+id/map"-->
+<!--            android:title="Blood Bank"-->
+<!--                    <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_baseline_dashboard_24"/>android:icon="@drawable/blood_bank"/>-->
